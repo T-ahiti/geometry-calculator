@@ -56,17 +56,17 @@ document.getElementById('rhombusButton').addEventListener('click', function(){
 })
 
 document.getElementById('pentagonButton').addEventListener('click', function(){
-    const placeHolderW = document.getElementById('rectangleW')
-    const w = parseFloat(rectangleW.value)
-    const placeHolderL = document.getElementById('rectangleL')
-    const l = parseFloat(rectangleL.value)
-    const rectangleCalc = w * l
+    const placeHolderP = document.getElementById('pentagonP')
+    const p = parseFloat(pentagonP.value)
+    const placeHolderB = document.getElementById('pentagonB')
+    const b = parseFloat(pentagonB.value)
+    const pentagonCalc = p * b
 
-    placeHolderW.value = ''
-    placeHolderL.value = ''
+    placeHolderP.value = ''
+    placeHolderB.value = ''
 
     const getArea = document.getElementById('areaCalc')
-    getArea.innerText = rectangleCalc
+    getArea.innerText = pentagonCalc
 })
 
 document.getElementById('rectangleButton').addEventListener('click', function(){
