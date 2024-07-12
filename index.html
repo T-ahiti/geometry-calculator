@@ -17,7 +17,7 @@
     </header>
 
     <main class="pt-12 pl-4 pr-4">
-        <div class="flex justify-around">
+        <div class="flex justify-around gap-5">
             <!-- shape container -->
             <div class="flex gap-6 text-center">
                 <!-- first card -->
@@ -29,11 +29,11 @@
                        <h2 class="card-title">Triangle</h2>
                        <p>Area (A) = 0.5 x b x h</p>
                        <div class="flex">
-                        <input type="number" placeholder="b" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
-                        <input type="number" placeholder="h" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
+                        <input type="number" placeholder="b" id="triangleB" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
+                        <input type="number" placeholder="h" id="triangleH" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
                        </div>
                        <div class="card-actions">
-                         <button class="btn btn-primary">Calculate</button>
+                         <button id="triangleButton" class="btn btn-primary">Calculate</button>
                        </div>
                     </div>
                 </div>
@@ -76,8 +76,9 @@
 
             
              <!-- area container -->
-                <div class="w-[450px]">
+                <div class="w-[450px] h-[400px]  border shadow">
                    <div class="text-4xl text-center">Area Calculator</div>
+                   <p id="areaCalc"></p>
                 </div>
         </div>
 
