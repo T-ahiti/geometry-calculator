@@ -69,16 +69,16 @@ document.getElementById('pentagonButton').addEventListener('click', function(){
     getArea.innerText = pentagonCalc
 })
 
-document.getElementById('rectangleButton').addEventListener('click', function(){
-    const placeHolderW = document.getElementById('rectangleW')
-    const w = parseFloat(rectangleW.value)
-    const placeHolderL = document.getElementById('rectangleL')
-    const l = parseFloat(rectangleL.value)
-    const rectangleCalc = w * l
+document.getElementById('ellipseButton').addEventListener('click', function(){
+    const placeHolderA = document.getElementById('ellipseA')
+    const a = parseFloat(ellipseA.value)
+    const placeHolderB = document.getElementById('ellipseB')
+    const b = parseFloat(ellipseB.value)
+    const ellipseCalc = 3.141592653589793238462643383279502884197 * a * b
 
-    placeHolderW.value = ''
-    placeHolderL.value = ''
+    placeHolderA.value = ''
+    placeHolderB.value = ''
 
     const getArea = document.getElementById('areaCalc')
-    getArea.innerText = rectangleCalc
+    getArea.innerText = ellipseCalc
 })
