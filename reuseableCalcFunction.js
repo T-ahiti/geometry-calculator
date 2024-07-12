@@ -1,11 +1,11 @@
 
+
 function getElementById(idName){
   const inputValueId = document.getElementById(idName)
   const inputValue1 = inputValueId.value
   const parse = parseFloat(inputValue1)
   return parse 
 }
-
 
 function calculateTriangle(){
     const b = getElementById('triangleB')
@@ -14,7 +14,16 @@ function calculateTriangle(){
     getAreaById(area)
 }
 
+// function calculateREctangle(){
+    // const w = getElementById('rectangleW')
+    // const l = getElementById('rectangleL')
+    // const area = w * l
+    // getAreaById(area)
+// }
+// 
+
 function getAreaById(areaId, area){
     const areaId = document.getElementById(areaId)
     areaId.innerText = area; 
 }
+
