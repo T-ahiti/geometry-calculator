@@ -11,7 +11,7 @@
 
 </head>
 
-<body>
+<body class="bg-rose-50	">
     <header>
 
     </header>
@@ -21,7 +21,7 @@
             <!-- shape container -->
             <div class="flex gap-6 text-center">
                 <!-- first card -->
-                <div class="card bg-base-100 shadow">
+                <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                     <figure>
                       <img src="images/triangle.png" alt="Shoes" class="pt-6 px-12" />
                     </figure>
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <!-- second card -->
-                <div class="card bg-base-100 shadow">
+                <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                     <figure>
                       <img src="images/rectangle.png" alt="Shoes" class="pt-6 px-5"/>
                     </figure>
@@ -46,16 +46,16 @@
                        <h2 class="card-title">Rectangle</h2>
                        <p>Area (A) = w x I</p>
                        <div class="flex">
-                        <input type="number" placeholder="w" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
-                        <input type="number" placeholder="l" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
+                        <input type="number" placeholder="w" id="rectangleW" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
+                        <input type="number" placeholder="l" id="rectangleL" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
                        </div>
                        <div class="card-actions ">
-                         <button class="btn btn-primary">Calculate</button>
+                         <button id="rectangleButton" class="btn btn-primary">Calculate</button>
                        </div>
                     </div>
                 </div>
                 <!-- third card -->
-                <div class="card bg-base-100 shadow">
+                <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                     <figure>
                       <img src="images/parallelogram.png" alt="Shoes" class="pt-8 px-4"/>
                     </figure>
@@ -63,11 +63,11 @@
                        <h2 class="card-title">Parallelogram</h2>
                        <p>Area (A) = b x h</p>
                        <div class="flex">
-                        <input type="number" placeholder="b" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
-                        <input type="number" placeholder="h" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
+                        <input type="number" placeholder="b" id="parallelogramB" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ">cm
+                        <input type="number" placeholder="h" id="parallelogramH" class="border rounded-md bg-gray-100 w-[70px] pl-[10px] mr-2 ml-3">cm
                        </div>
                        <div class="card-actions">
-                         <button class="btn btn-primary">Calculate</button>
+                         <button id="parallelogramButton" class="btn btn-primary">Calculate</button>
                        </div>
                     </div>
                 </div>
@@ -76,15 +76,15 @@
 
             
              <!-- area container -->
-                <div class="w-[450px] h-[400px]  border shadow">
+                <div class="w-[450px] h-[400px] bg-white border shadow">
                    <div class="text-4xl text-center">Area Calculator</div>
-                   <p id="areaCalc"></p>
+                   <p id="areaCalc" class="text-3xl text-pink-500 flex justify-center h-[320px] items-center"></p>
                 </div>
         </div>
 
         <div class="flex gap-6 text-center mt-12">
             <!-- first card -->
-            <div class="card bg-base-100 shadow">
+            <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                 <figure>
                   <img src="images/rhombus.png" alt="Shoes" class="pt-12 px-12" />
                 </figure>
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <!-- second card -->
-            <div class="card bg-base-100 shadow">
+            <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                 <figure>
                   <img src="images/pentagon.png" alt="Shoes" class="pt-10 px-16"/>
                 </figure>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <!-- third card -->
-            <div class="card bg-base-100 shadow">
+            <div class="card hover:bg-sky-50 cursor-pointer bg-base-100 shadow">
                 <figure>
                   <img src="images/ellipse.png" alt="Shoes" class="pt-12 px-10"/>
                 </figure>
